@@ -1,0 +1,189 @@
+<!--
+/*
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>webAR Box Pic</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+  minimum-scale=1.0, maximum-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css"> -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <style>
+    body {
+        font-family: monospace;
+        margin: 0;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        /*height: 100%;*/
+        height: 100vh;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+
+    #sim {
+        position: fixed;
+        bottom: -4px;
+        z-index: 12;
+        /*width: 100%;*/
+        /*height:100%;*/
+    }
+
+    #profile {
+        height: auto;
+        width: auto;
+
+        max-width: 376px;
+    }
+
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+    }
+
+
+    #container {
+        position: fixed;
+    }
+
+    .buddy {
+        display: none;
+
+        height: auto;
+        width: auto;
+        max-width: 376px;
+    }
+
+    .rotate-left {
+        transform: rotate(30deg) scale(0.8);
+        transition: 0.7s;
+        margin-left: 400px;
+        cursor: e-resize;
+        opacity: 0;
+        z-index: 10;
+    }
+
+    .rotate-right {
+        transform: rotate(-30deg) scale(0.8);
+        transition: 0.7s;
+        opacity: 0;
+        margin-left: -400px;
+        cursor: w-resize;
+        z-index: 10;
+    }
+
+    .avatar {
+
+        width: 376px;
+        height: 610px;
+
+        background-size: auto 106% !important;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .like {
+        /*border-radius: 5px;*/
+        padding: 5px 10px;
+        /*border: 2px solid green;*/
+        /*color: green;*/
+        text-transform: uppercase;
+        font-size: 15px;
+        position: absolute;
+        top: 50px;
+        right: 40px;
+        text-shadow: none;
+    }
+
+    .dislike {
+        /*border-radius: 5px;*/
+        padding: 5px 10px;
+        /*border: 2px solid red;*/
+        /*color: red;*/
+        text-transform: uppercase;
+        font-size: 15px;
+        position: absolute;
+        top: 50px;
+        left: 40px;
+        text-shadow: none;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- <img style="position: absolute;top: 0;left: 0" src="./textures/2.png"> -->
+    <div id="sim">
+        <img id="profile" src="./textures/frames/bottom_bar.png">
+    </div>
+    <div id="container">
+        <div class="buddy" style="display: block;">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile1.png')"></div>
+        </div>
+        <div class="buddy">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile2.png')"></div>
+        </div>
+        <div class="buddy">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile3.png')"></div>
+        </div>
+        <div class="buddy">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile4.png')"></div>
+        </div>
+        <div class="buddy">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile5.png')"></div>
+        </div>
+        <div class="buddy">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile6.png')"></div>
+        </div>
+        <div class="buddy">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile7.png')"></div>
+        </div>
+        <div class="buddy">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile8.png')"></div>
+        </div>
+        <div class="buddy">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile9.png')"></div>
+        </div>
+        <div class="buddy">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile10.png')"></div>
+        </div>
+        <div class="buddy">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile11.png')"></div>
+        </div>
+        <div class="buddy">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile12.png')"></div>
+        </div>
+        <div class="buddy">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile13.png')"></div>
+        </div>
+        <div class="buddy">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile14.png')"></div>
+        </div>
+    </div>
+    <script src="../libraries/three.js/three.js"></script>
+    <script src="../libraries/three.js/VRControls.js"></script>
+    <script src="../libraries/ar/three.ar.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

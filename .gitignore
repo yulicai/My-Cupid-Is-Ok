@@ -1,0 +1,13 @@
+assets/
+documentation/
+app/website_app_server/config.js
+
+*.ai
+*.psd
+*.png
+*.jpg
+*.jpeg
+
+app/ar/*
+app/small_phone/*
+app/website_app/*

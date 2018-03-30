@@ -1,0 +1,107 @@
+<!--
+/*
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57300130-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-57300130-4');
+    </script>
+    
+    <title>My Cupid Is Ok</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+  minimum-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css"> -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./textures/logo_text.png">
+        <div class="info">
+            "My Cuipid Is Ok" is an online DATING experience and an <a href="http://mycupidisok.date/info.html" target="_blank">AUGMENTED Reality project</a> created by <a href="http://caiyuli.com">Yuli Cai</a> on 2018.
+            <br />Inspired by the DTF poster from Okcupid.
+        </div>
+    </div>
+    <!--     <img style="position: absolute;top: 0;left: 0;z-index: -20;" src="./textures/2.png"> -->
+    <div id="container">
+        <img id="phone" src="./textures/iphone_big.png">
+        <div class="buddy" style="display: block;">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile1_statue.png')"></div>
+        </div>
+        <div class="buddy transparent" style="display: block;">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile2_statue.png')"></div>
+        </div>
+        <div class="buddy transparent" style="display: block;">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile3_statue.png')"></div>
+        </div>
+        <div class="buddy transparent" style="display: block;">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile4_statue.png')"></div>
+        </div>
+        <div class="buddy transparent" style="display: block;">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile5_statue.png')"></div>
+        </div>
+        <div class="buddy transparent" style="display: block;">
+            <div class="avatar" style="display: block; background-image: url('./textures/frames/profile6_statue.png')"></div>
+        </div>
+    </div>
+    <!--     <div id="sim">
+        <img id="profile" src="./textures/iphone_big.png">
+    </div> -->
+    <div id="blocker">
+        <div id="popup">
+        </div>
+        <button onclick="cancel();">Ok</button>
+    </div>
+    <div id="documentation">
+        <p class="info"> Swiping to Okcupid DTF poster, AR dating on the train >>> </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QwFwqbPETK0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="form">
+        <p> Have something to say or follow new projects.</p>
+        <form method="POST" action="/post_thought">
+            <input type="text" name="thought" placeholder="Yay or Nay? Pick up line?" />
+            <input type="email" name="email" placeholder="Your Email Address." />
+            <!-- <input type="submit" name="submitbutton" value="Subscribe" /> -->
+            <button type="submit" name="submitbutton">Submit </button>
+        </form>
+    </div>
+    <div class="footer">
+        <a href="http://mycupidisok.date/info.html" target="_blank"> About </a> © 2018 Yuli Cai
+        <br />
+    </div>
+    <script src="./libraries/p5.js"></script>
+    <script src="./libraries/mover.js"></script>
+    <script src="./libraries/weirdo.js"></script>
+    <script src="app_noAR.js"></script>
+</body>
+
+</html>

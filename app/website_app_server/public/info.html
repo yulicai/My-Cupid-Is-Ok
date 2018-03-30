@@ -1,0 +1,286 @@
+<!--
+/*
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57300130-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-57300130-4');
+    </script>
+    <title>AR Info | My Cupid Is Ok</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <style type="text/css">
+    body {
+        background-color: rgb(247, 63, 104);
+        font-family: 'Raleway', sans-serif;
+        margin: 0;
+    }
+
+    .logo {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .container {
+        margin: auto;
+        padding: 10px;
+    }
+
+    .info {
+        float: left;
+        color: white;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+        position: relative;
+        margin: 20px 10px 20px 10px;
+        width: 30%;
+        padding: 10px;
+        background-color: #000000;
+        background-blend-mode: transparent;
+        box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, .2);
+    }
+
+    a {
+        color: #F4426A;
+        font-weight: 700;
+    }
+
+    .imgInfo {
+        margin-top: 40px;
+        z-index: 100;
+        position: relative;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: example;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: example;
+        animation-duration: 4s;
+    }
+
+    .documentation {
+        margin-left: 15%;
+        width: 70%;
+    }
+
+    #documentation p {
+        color: blue;
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 400;
+        position: relative;
+        margin: 20px 10px 16px 0px;
+        padding: 10px;
+        background-color: white;
+        background-blend-mode: transparent;
+        box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, .2);
+    }
+
+    .center {
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+
+    #credit {
+        text-align: center;
+        width: 20%;
+    }
+
+    ._footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 6px;
+        font-size: 14px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        z-index: -100;
+    }
+
+    ._footer a {
+        color: white;
+        cursor: pointer;
+    }
+    /* Safari 4.0 - 8.0 */
+
+    @-webkit-keyframes example {
+        0% {
+            background-color: black;
+            left: 0px;
+            top: 0px;
+        }
+        25% {
+            background-color: #7FFF00;
+            left: 100px;
+            top: 0px;
+        }
+        50% {
+            background-color: pink;
+            left: 100px;
+            top: 30px;
+        }
+        75% {
+            background-color: blue;
+            left: 0px;
+            top: 30px;
+        }
+        100% {
+            background-color: black;
+            left: 0px;
+            top: 0px;
+        }
+    }
+    /* Standard syntax */
+
+    @keyframes example {
+        0% {
+            background-color: black;
+            left: 0px;
+            top: 0px;
+        }
+        25% {
+            background-color: #7FFF00;
+            left: 100px;
+            top: 0px;
+        }
+        50% {
+            background-color: pink;
+            left: 100px;
+            top: 30px;
+        }
+        75% {
+            background-color: blue;
+            left: 0px;
+            top: 30px;
+        }
+        100% {
+            background-color: black;
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 750px) {
+        .documentation iframe {
+            width: 300px;
+        }
+        .info {
+            width: 80%;
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+    </style>
+</head>
+
+<body class="scroll-assist">
+    <div class="logo">
+        <a href="http://mycupidisok.date">
+        <img src="./textures/logo_text.png">
+    </a>
+        <section class="container">
+            <div class="info">
+                On Mar18 2018, <a href="http://caiyuli.com">Yuli Cai</a> went on a G train as she normal does and pulled out a new app she developed to augement her Okcupid experience.
+                <br />Inspired by the DTF poster from Okcupid.
+            </div>
+            <div id="documentation">
+                <p class="info"> Swiping to Okcupid DTF poster, AR dating on the train >>> </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QwFwqbPETK0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="info imgInfo">
+                moving images ↓↓↓
+            </div>
+        </section>
+    </div>
+    <section class="projects pt48">
+        <div class="container">
+            <div class="row masonry masonryFlyIn">
+                <div class="col-sm-6 masonry-item project" data-filter="People">
+                    <div class="image-tile inner-title hover-reveal text-center">
+                        <img alt="Pic" src="./info_pics/detecting.gif" />
+                    </div>
+                </div>
+                <div class="col-sm-6 masonry-item project" data-filter="Animals">
+                    <div class="image-tile inner-title hover-reveal text-center">
+                        <img alt="Pic" src="./info_pics/detected.gif" />
+                    </div>
+                </div>
+                <div class="col-sm-6 masonry-item project" data-filter="People">
+                    <div class="image-tile inner-title hover-reveal text-center">
+                        <img alt="Pic" src="./info_pics/clip1.gif" />
+                    </div>
+                </div>
+                <div class="col-sm-6 masonry-item project" data-filter="Objects">
+                    <div class="image-tile inner-title hover-reveal text-center">
+                        <img alt="Pic" src="./info_pics/start.gif" />
+                    </div>
+                </div>
+                <div class="col-sm-6 masonry-item project" data-filter="Objects">
+                    <div class="image-tile inner-title hover-reveal text-center">
+                        <img alt="Pic" src="./info_pics/swiping.gif" />
+                    </div>
+                </div>
+                <div class="col-sm-6 masonry-item project" data-filter="People">
+                    <div class="image-tile inner-title hover-reveal text-center">
+                        <img alt="Pic" src="./info_pics/clip2.gif" />
+                    </div>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+        <div class="info center">
+            Growing up I have always wondered how it feels like to be with the person I like. I would try to place their photo next to mine and ask my friend: "do we look like a couple?" So I made this project to answer this question.
+            <br /> 
+             <br /> 
+            How does it work? The demo app was made with WebAR. It detects the surroundings to see if there are Okcupid posters with the camera on my phone. If the posters were detected, I can start placing my face and the face from the profile I am swiping through in space. The 2 faces of us will be mapped onto the faces of that couple on the posters. 
+             <br /> 
+              <br /> 
+            The difference between doing it on subway and doing it at home with Okcupid app is that the swiping experience ends with the announcement of MTA: This is the last stop of this train. Dating app can get very addictive sometimes, doing it on the subway can at least put a physical stop on it.
+        </div>
+        <div id="credit" class="info">
+            Thanks <a href="http://xxx.tiri.xxx" target="_blank">Tiri Knanuruk</a> for camera and documenting.
+        </div>
+    </section>
+    <div class="_footer">
+        <a href="http://mycupidisok.date" target="_blank"> Date </a> © 2018 Yuli Cai
+        <br />
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/masonry.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
